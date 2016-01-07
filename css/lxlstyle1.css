@@ -1,0 +1,9 @@
+body{
+	background-color: #ffc;
+	font-family: "微软雅黑";
+}
+.admin-header-text, .login-header-text{text-align: center; line-height: middle;  font-size: 30px; color: #c30;}
+.password-recovery-link{color:#0cf;}
+.password-recovery-link:hover{color: blue;}
+.admin-div-top{background-color: #69f; height: 50px; }
+.admin-div-left{background-color: #69f; width: 200px; height:550px; border-top: 2px solid #c30;}111111

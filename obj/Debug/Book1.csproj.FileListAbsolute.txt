@@ -1,0 +1,4 @@
+E:\MyNetWeb\WebApplication4\WebApplication4\bin\WebApplication4.dll
+E:\MyNetWeb\WebApplication4\WebApplication4\bin\WebApplication4.pdb
+E:\MyNetWeb\WebApplication4\WebApplication4\obj\Debug\WebApplication4.dll
+E:\MyNetWeb\WebApplication4\WebApplication4\obj\Debug\WebApplication4.pdb

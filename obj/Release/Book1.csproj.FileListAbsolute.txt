@@ -1,0 +1,5 @@
+E:\MyNetWeb\WebApplication4\WebApplication4\bin\WebApplication4.dll
+E:\MyNetWeb\WebApplication4\WebApplication4\bin\WebApplication4.pdb
+E:\MyNetWeb\WebApplication4\WebApplication4\obj\Release\WebApplication4.dll
+E:\MyNetWeb\WebApplication4\WebApplication4\obj\Release\WebApplication4.pdb
+E:\MyNetWeb\WebApplication4\WebApplication4\obj\Release\Book1.csprojResolveAssemblyReference.cache

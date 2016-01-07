@@ -1,0 +1,175 @@
+        body{
+            font-family: "微软雅黑";
+            padding-top: 50px;
+            padding-bottom: 1px;
+            background-color: #ffc;
+            color: white;
+        }
+        .header{
+            font-family: "微软雅黑";
+            background-color: #b61d1d; 
+        }
+        /*按钮大小*/
+        #shucheng_botton{
+            padding-top: 10px;
+        }
+        /* 轮播广告 */
+
+        .carousel {
+            margin-top: 0px;
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        /*导航条和页脚颜色*/
+        .mycolor01{
+            color: white;
+            background-color: #b61d1d;
+        }
+        /*页脚组件布局*/
+        .myfooter01{
+            color: white;
+            background-color: #b61d1d;
+        }
+        .myfooter02{
+            border-top-style:1px  solid white;
+        }
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+        a:link{ 
+            color:white; 
+            text-decoration:none; 
+        } 
+        a:visited { 
+            color:white; 
+            text-decoration:none; 
+        } 
+        a:hover {
+            color:black; 
+            text-decoration:none; 
+        } 
+        a:active { 
+            color:white; 
+            text-decoration:none; 
+        } 
+        .navbar-nav>li>a:link {color: white; text-decoration: none}
+        .navbar-nav>li>a:visited {color: white; text-decoration: none !important} 
+        .navbar-nav>li>a:hover {background-color:#eee;color:#f66; text-decoration: none}
+        .navbar-nav>li>a:active {background-color:#eee;color:white; text-decoration: none}
+        div>a>img{
+            margin:10px;
+            width:45%;
+            height:300px !important;
+        }
+        div>a>img:hover{
+            transform: scale(1.05, 1.05);
+            transition: .2s transform;
+        }
+        .myHeadTitle {color: #F66; text-align: center; }
+        .myCartDaoHang
+        {
+            text-align:center;
+            color: black;
+        }
+        .myCartDaoHang01
+        {
+            margin-top:10px;
+            border:2px solid #f66;
+        }
+        td>a>img{width:100px; height: 100px;}
+        .my-Table-Td-Link{color:blue !important; width: 50%;}
+        .my-Table-Td-Link:hover{color:#f66 !important;}
+        .my-Table-Td-Width{width:10%; }
+        .my-Shu-Liang{float:left; width: 30px; text-align:center; color:black !important}
+        .my-DEL-Link-Color{color: #099 !important;}
+        .my-DEL-Link-Color:hover{color: #f66 !important;}
+        .my-Font-Color-H2{color:#333 !important ;}
+        .my-Font-Color-H4{color:#333 !important;}
+        .my-book-information-chakan{text-align:center !important; }
+        .my-passwordRecovery-label{color: #333;}
+        .mypersonal-information-font{color:#333;}
+        .my-order-font{color:#333 !important;}
+        .my-order-link{color:blue !important; font-size: 12px; }
+        .my-order-link:hover{color:#f66 !important; font-size: 14px;}
+
+
+        /*--start-breadcrumbs--*/
+.breadcrumbs {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-top: 1em;
+    background-color:#FFFFFF;
+}
+ol.breadcrumb {
+    margin: 0;
+}
+.breadcrumb li a{
+    color:#242424;
+}
+.breadcrumb li a:hover{
+    color:#e64b50;
+    text-decoration:none;
+}
+.breadcrumb > .active {
+    color: #242424;
+}
+.breadcrumb {
+    background: none;
+}
+/*--end-breadcrumbs--*/

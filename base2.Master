@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="base2.master.cs" Inherits="WebApplication4.base2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/mystyle.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="University Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title></title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script>
+        $(function () {
+            var Sys = {};
+            var ua = navigator.userAgent.toLowerCase();
+            var s;
+            (s = ua.match(/rv:([\d.]+)\) like gecko/)) ? Sys.ie = s[1] :
+            (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+            (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+            (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+            (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+            (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+            if (Sys.ie) {
+                alert("抱歉,你的IE我不支持,请下载最新谷歌浏览器");
+                location.href = 'http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html ';
+            }
+        });
+    </script>
+    <!-- banner -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>  
+    <div class="banner">	  
+	    <div class="header">
+		    <div class="logo">
+			    <a href="/"><img src="/images/logo.jpg" alt=""/></a>
+			</div>
+			<div class="top-menu">
+				<span class="menu"></span>
+				<ul class="navig">
+				    <li class="active"><a href="/">首页</a></li>
+				    <li><a href="/search.aspx">检索</a></li>
+					<li><a href="/gallery.aspx">图集</a></li>
+					<li><a href="/about.aspx">关于</a></li>
+					<li><a href="/contact.aspx">联系</a></li>
+					<%
+                        if (Session["userid"] == null)
+                        {
+                            Response.Write("<li><a href='/login.aspx'>登陆</a></li>");
+                        }
+                        else
+                        {
+                            string userid = Session["userid"].ToString();
+                            string username = Session["username"].ToString();
+                            if(Convert.ToInt32(Session["usertype"]) == 0)
+                            {
+                                Response.Write("<li><a href='/admin/'>欢迎," + username +"</a></li>");   
+                            }
+                            else
+                            {
+                                Response.Write("<li><a href='/user/'>欢迎," + username +"</a></li>");  
+                            }
+                            Response.Write("<li><a href='/logout.aspx'>退出</a></li>");
+                        }
+                    %>
+				</ul>
+			</div>
+			<!-- script-for-menu -->
+		    <script>
+		        $("span.menu").click(function () {
+		            $("ul.navig").slideToggle("slow", function () {
+		            });
+		        });
+		    </script>
+		    <!-- script-for-menu -->
+            <div class="clearfix"></div>
+	    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!---->
+    <div class="copywrite">
+	    <div class="container">
+		    <p>Copyright ©软联.net小组. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            友情链接：<a href="http://115.159.119.232:8080/OA/">菜鸟一号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://119.29.139.175/Vshopping/">Vshopping</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">计量器管理系统</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">人力资源管理系统</a>
+		    </p>
+	    </div>
+    </div>
+<!---->
+<!---->
+</body>
+</html>

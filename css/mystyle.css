@@ -1,0 +1,12 @@
+﻿.myactive
+{
+    color:#0094ff !important;
+}
+.myhead
+{
+    background: #4dc47d;
+    font-family: "Microsoft YaHei" !important; 
+    font-size:20px !important;
+    font-style:italic !important;
+}
+.hidden { display:none;}
